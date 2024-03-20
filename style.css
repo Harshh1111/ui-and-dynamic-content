@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 338px;
+  background-image: url("../image/fruit.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Ensure background image is not repeated */
+  color: #fff;
+}
+
+.background-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px; /* Add padding to accommodate different screen sizes */
+}
+
+.widget-container {
+  text-align: center;
+  max-width: 400px;
+  width: 100%; /* Ensure widget container takes full width on smaller screens */
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+.masthead {
+  margin-bottom: 20px;
+}
+
+.icon-container {
+  margin-bottom: 10px;
+}
+
+.masthead i {
+  font-size: 65px;
+  color: black;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-content input[type="text"],
+.main-content button {
+  width: calc(100% - 20px); /* Adjust width to fit container with padding */
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px; /* Add space between input and button */
+}
+
+.main-content button {
+  height: 40px; /* Increase button height for better touch interaction */
+}
+
+.main-content ul {
+  text-align: left;
+  padding-left: 30px; /* Remove default padding */
+}
+
+.error-message {
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.social-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .widget-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .masthead i {
+    font-size: 48px; /* Decrease icon size for smaller screens */
+  }
+
+  .tagline {
+    font-size: 1.2rem; /* Decrease tagline font size for smaller screens */
+  }
+}
